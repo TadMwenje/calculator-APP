@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator APP</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            
+            <div class="display-container">
+                <div class="history-display" id="history"></div>
+                <div class="main-display" id="display">0</div>
+            </div>
+            
+            <div class="memory-buttons">
+                <button class="btn memory" data-action="mc">MC</button>
+                <button class="btn memory" data-action="mr">MR</button>
+                <button class="btn memory" data-action="m-plus">M+</button>
+                <button class="btn memory" data-action="m-minus">M-</button>
+            </div>
+            
+            <div class="buttons-grid">
+               
+                <button class="btn function" data-action="clear">C</button>
+                <button class="btn function" data-action="backspace">⌫</button>
+                <button class="btn function" data-action="percentage">%</button>
+                <button class="btn operator" data-action="divide">÷</button>
+                
+                <button class="btn number" data-value="7">7</button>
+                <button class="btn number" data-value="8">8</button>
+                <button class="btn number" data-value="9">9</button>
+                <button class="btn operator" data-action="multiply">×</button>
+                
+                <button class="btn number" data-value="4">4</button>
+                <button class="btn number" data-value="5">5</button>
+                <button class="btn number" data-value="6">6</button>
+                <button class="btn operator" data-action="subtract">-</button>
+                
+                <button class="btn number" data-value="1">1</button>
+                <button class="btn number" data-value="2">2</button>
+                <button class="btn number" data-value="3">3</button>
+                <button class="btn operator" data-action="add">+</button>
+                
+                <button class="btn number" data-value="0">0</button>
+                <button class="btn number" data-value="decimal">.</button>
+                <button class="btn function" data-action="square">x²</button>
+                <button class="btn function" data-action="sqrt">√</button>
+                
+                <button class="btn equals" data-action="calculate">=</button>
+            </div>
+        </div>
+        
+     
+        <div class="history-panel">
+            <h3>Calculation History</h3>
+            <div class="history-list" id="historyList"></div>
+            <button class="btn clear-history" id="clearHistory">Clear History</button>
+        </div>
+    </div>
+
+    <script src="scripts/calculator.js"></script>
+</body>
+</html>
